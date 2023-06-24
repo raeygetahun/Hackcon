@@ -2,37 +2,78 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 5px 100px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo { /* hackcon */
+  font-size: 20px;
+  letter-spacing: 7px;
+  line-height: 17px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 35px;
+}
+
+.welcome-section {
+  background-image: url('../public/first-screen.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-section h1 { /* join us at hackcon */
+  font-size: 64px;
+  margin-top: -250px; /* space above the first line of text */
+  letter-spacing: 5px;
+  line-height: 96px;
+  font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-section p { /* embrace ... */
+  margin-top: -45px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 43px;
+  font-weight: normal;
 }
