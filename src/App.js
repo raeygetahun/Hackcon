@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import WhyHackCon from "./components/About/WhyHackCon/WhyHackCon";
+import Address from "./components/Contact/Contact";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Welcome to My Hackathon Landing Page</h1>
       </header>
+      <main>
+        <WhyHackCon />
+        <Address />
+      </main>
+      <footer>
+        <p>
+          &copy; {new Date().getFullYear()} My Hackathon. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
-
 export default App;
