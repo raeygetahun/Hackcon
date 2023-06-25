@@ -1,49 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
 import { Grid } from "@mui/material";
+import useScrollHandler from "../../hooks/useScrollHandler";
 
-
-const Statistic = ({ number, text, isLineActive }) => (
-  <Grid item xs={6} className="numbersgrid">
-  <div className="stats">
-      <div className="statnumbers">{number}</div>
-    <div className="HorizontalLine"></div>
-    <div className={`ShortHorizontalLine ${isLineActive ? "active" : ""}`}></div>
-    <div className="numbersText">{text}</div>
-
-
-  </div>
-  </Grid>
-);
-
-
-const HackconInNumbers = () => {
-  const [isLineActive, setIsLineActive] = useState(false);
-
+const Statistic = ({ number, text, index, isLineActive }) => {
+  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const shortLine = document.querySelector(".ShortHorizontalLine");
+    const timer = setTimeout(() => {
+      setIsActive(isLineActive);
+    }, index * 200); // Adjust the delay timing as per your preference (500ms in this example)
 
+    return () => clearTimeout(timer);
+  }, [index, isLineActive]);
 
-      if (shortLine) {
-        const shortLineTop = shortLine.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+  return (
+    <Grid item xs={6} className="numbersgrid">
+      <div className="stats">
+        <div className="statnumbers">{number}</div>
+        <div className="HorizontalLine"></div>
+        <div className={`ShortHorizontalLine ${isActive ? "active" : ""}`}></div>
+        <div className="numbersText">{text}</div>
+      </div>
+    </Grid>
+  );
+};
 
-
-        setIsLineActive(shortLineTop <= windowHeight * 0.8);
-      }
-    };
-
-
-    window.addEventListener("scroll", handleScroll);
-
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+const HackconInNumbers = () => {
+  const isLineActive = useScrollHandler("ShortHorizontalLine");
 
   const statisticsData = [
     { number: "100", text: "Participants" },
@@ -51,7 +35,6 @@ const HackconInNumbers = () => {
     { number: "1000$", text: "Total Prize" },
     { number: "25", text: "Projects" },
   ];
-
 
   return (
     <div>
@@ -68,6 +51,7 @@ const HackconInNumbers = () => {
                   key={index}
                   number={statistic.number}
                   text={statistic.text}
+                  index={index}
                   isLineActive={isLineActive}
                 />
               ))}
@@ -78,6 +62,5 @@ const HackconInNumbers = () => {
     </div>
   );
 };
-
 
 export default HackconInNumbers;
