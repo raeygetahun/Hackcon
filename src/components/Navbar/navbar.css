@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 50px;
@@ -16,9 +16,9 @@
     outline: none;
 }
 
-.navbar.scrolled {
+/* .navbar.scrolled {
     background-image: linear-gradient(to bottom, rgba(242, 242, 242, 0.9), rgba(0, 0, 0, 0));
-}
+} */
 
 .logo { /* hackcon */
     font-size: 20px;
