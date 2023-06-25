@@ -32,7 +32,6 @@ const AboutText = () => {
   }, []);
   return (
     <div className="About ">
-      <div style={{ backgroundColor: "white", height: "500px" }}></div>
       <Grid container spacing={3}>
         <Grid className="AboutText" item md={6} xs={12}>
           <div className="VerticalLine"></div>
