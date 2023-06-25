@@ -6,27 +6,32 @@ import "./App.css";
 import WhyHackCon from "./components/About/WhyHackCon/WhyHackCon";
 import Address from "./components/Contact/Contact";
 import HackconInNumbers from "./components/About/HackconInNumbers";
+import Footer from "./components/Footer/Footer";
+import WhattoExpect from "./components/About/WhattoExpect";
+import WhocanParticpate from "./components/About/WhocanParticpate";
+import Speakers from "./components/Speakers/Speakers";
+import Schedule from "./components/Schedule/Schedule";
+import Partners from "./components/Partners/Partners";
+import OurTeam from "./components/OurTeam/Ourteam";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar />
-        <Welcome />
-        <AboutText />
-        <HackconInNumbers />
-        <Address />
-        <WhyHackCon />
-      </header>
-      <main>
-        <WhyHackCon />
-        <Address />
-      </main>
-      <footer>
-        <p>
-          &copy; {new Date().getFullYear()} My Hackathon. All rights reserved.
-        </p>
-      </footer>
+      <Navbar />
+      <Welcome />
+      <AboutText />
+      <HackconInNumbers />
+      <WhyHackCon />
+      <WhattoExpect />
+      <WhocanParticpate />
+      <Speakers />
+      <Schedule />
+      <Partners />
+      <OurTeam />
+      <FAQ />
+      <Address />
+      <Footer />
     </div>
   );
 }

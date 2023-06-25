@@ -2,34 +2,12 @@ import React, { useEffect, useState }  from "react";
 import { Grid } from "@mui/material";
 // import hero_hackathons from '../../assets/hero_hackathons.jpg'//image subject to change
 import "./about.css";
+import useScrollHandler from "../../hooks/useScrollHandler";
 
 
 const AboutText = () => {
-  const [isLineActive, setIsLineActive] = useState(false);
+  const isLineActive = useScrollHandler("ShortLine");
 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const shortLine = document.querySelector(".ShortLine");
-
-
-      if (shortLine) {
-        const shortLineTop = shortLine.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-
-        setIsLineActive(shortLineTop <= windowHeight * 0.8);
-      }
-    };
-
-
-    window.addEventListener("scroll", handleScroll);
-
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <div className="About ">
       <Grid container spacing={3}>
