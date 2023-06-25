@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from "react";
 import { Grid } from "@mui/material";
-import hero_hackathons from '../../assets/hero_hackathons.jpg'//image subject to change
+// import hero_hackathons from '../../assets/hero_hackathons.jpg'//image subject to change
 import "./about.css";
 
 
@@ -58,7 +58,7 @@ const AboutText = () => {
           </div>
         </Grid>
         <Grid item md={6}>
-          <img src={hero_hackathons} style={{ maxWidth: "100%",height:'100%' }} />
+          {/* <img src={hero_hackathons} style={{ maxWidth: "100%",height:'100%' }} /> */}
         </Grid>
       </Grid>
     </div>

@@ -13,6 +13,8 @@ function App() {
                 <Navbar/>
                 <Welcome/>
                 <AboutText/>
+                <Address/>
+                <WhyHackCon/>
             </header>
       <main>
         <WhyHackCon />
