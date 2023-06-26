@@ -2,7 +2,7 @@ import React from 'react'
 
 const WhattoExpect = () => {
   return (
-    <div>WhattoExpect</div>
+    <div>WhattoExpecthere</div>
   )
 }
 
