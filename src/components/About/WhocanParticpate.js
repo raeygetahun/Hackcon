@@ -1,7 +1,6 @@
 import React from 'react';
 import './about.css';
 
-
 const WhocanParticpate = () => {
   return (
     <div className="container1">
