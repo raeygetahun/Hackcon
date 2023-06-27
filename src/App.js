@@ -14,6 +14,7 @@ import Schedule from "./components/Schedule/Schedule";
 import Partners from "./components/Partners/Partners";
 import OurTeam from "./components/OurTeam/Ourteam";
 import FAQ from "./components/FAQ/FAQ";
+import TechTalks from "./components/About/TechTalks";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <WhyHackCon />
       <WhattoExpect />
       <WhocanParticpate />
+
+      <TechTalks />
       <Speakers />
       <Schedule />
       <Partners />

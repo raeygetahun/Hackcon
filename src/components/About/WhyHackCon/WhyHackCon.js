@@ -20,7 +20,6 @@ const WhyHackCon = () => {
         <a
           className="learn-more"
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-          target="_blank"
         >
           Learn More
           <span className="arrow"></span>
@@ -30,7 +29,7 @@ const WhyHackCon = () => {
         <img
           src={firstScreenImage}
           alt="HackCon"
-          style={{ maxWidth: "60%", maxHeight: "1000px" }}
+          style={{ maxWidth: "40%", maxHeight: "600px" }}
         />
       </div>
     </div>
