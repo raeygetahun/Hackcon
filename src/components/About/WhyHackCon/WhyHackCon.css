@@ -69,7 +69,6 @@
 	top: 550px;
 	left: 92px;
 	border: solid white;
-	border-radius: 5px;
 	width: 150px;
 }
 
@@ -88,5 +87,16 @@
 .learn-more:hover .arrow {
 	transform: translateY(-50%) rotate(90deg);
 }
+
+.image-container {
+	/* CSS properties and values */
+	position: relative;
+	margin: -600px 0px 0px calc((100% - 980px) * 0.5);
+	left: 400px;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+}
+
 
 

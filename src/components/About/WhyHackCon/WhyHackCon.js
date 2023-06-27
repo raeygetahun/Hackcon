@@ -1,6 +1,8 @@
 import React from "react";
 import "./WhyHackCon.css";
 import useScrollHandler from "../../../hooks/useScrollHandler";
+import firstScreenImage from "../../../assets/first-screen.png";
+
 const WhyHackCon = () => {
   const isLineActive = useScrollHandler("targetClassName"); // Replace "targetClassName" with the actual class name of your target element
 
@@ -23,6 +25,13 @@ const WhyHackCon = () => {
           Learn More
           <span className="arrow"></span>
         </a>
+      </div>
+      <div className="image-container">
+        <img
+          src={firstScreenImage}
+          alt="HackCon"
+          style={{ maxWidth: "60%", maxHeight: "1000px" }}
+        />
       </div>
     </div>
   );
