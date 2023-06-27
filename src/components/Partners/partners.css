@@ -3,26 +3,26 @@
     text-align: left;
 }
 
-.content-container {
+.content-container-partners {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.text-container {
+.text-container-partners {
     margin-left: 20px;
     width: 40%;
     padding: 40px;
     text-align: justify;
 }
 
-.image-container {
+.image-container-partners {
     width: 50%;
     margin-right: 150px;
 }
 
-.image-container img {
+.image-container-partners img {
     width: 25%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
     height: auto;
 }
@@ -46,8 +46,8 @@
     font-weight: normal;
 }
 
-/* vertical line with moving thing */
-.line {
+/* vertical line with moving short line */
+.line-partners {
     position: relative;
     width: 1px;
     height: 350px;
@@ -56,7 +56,7 @@
     margin-left: 90px;
 }
 
-.moving-element {
+.moving-element-partners {
     position: absolute;
     top: 0;
     left: 50%;
@@ -65,10 +65,10 @@
     height: 80px;
     background-color: white;
     opacity: 0;
-    animation: move 1.5s 1 linear forwards;
+    animation: move-partners 1.5s 1 linear forwards;
 }
 
-@keyframes move {
+@keyframes move-partners {
     0% {
         opacity: 0.4;
         transform: translateX(-50%) translateY(120px);

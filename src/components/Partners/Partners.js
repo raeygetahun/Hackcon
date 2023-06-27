@@ -3,7 +3,7 @@ import firstScreenImage from '../../assets/first-screen.png';
 import './partners.css'
 
 const Partners = () => {
-    const movingElementRef = useRef(null);
+    const movingElementPartnersRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -12,9 +12,9 @@ const Partners = () => {
             const sectionBottom = (sectionTop + section.offsetHeight) / 2;
 
             if (window.scrollY >= sectionBottom) {
-                movingElementRef.current.classList.add('moving-element');
+                movingElementPartnersRef.current.classList.add('moving-element-partners');
             } else {
-                movingElementRef.current.classList.remove('moving-element');
+                movingElementPartnersRef.current.classList.remove('moving-element-partners');
             }
         };
 
@@ -27,17 +27,17 @@ const Partners = () => {
 
     return (
         <section id="partners-section" className="partners-section">
-            <div className="content-container">
-                <div className="line">
-                    <div className="moving-element" ref={movingElementRef}></div>
+            <div className="content-container-partners">
+                <div className="line-partners">
+                    <div className="moving-element-partners" ref={movingElementPartnersRef}></div>
                 </div>
-                <div className="text-container">
+                <div className="text-container-partners">
                     <h1>OUR PARTNERS</h1>
                     <br/>
                     <p>We are proud to partner with some of the most innovative companies and organizations in the field
                         of <strong>AI</strong>.</p>
                 </div>
-                <div className="image-container">
+                <div className="image-container-partners">
                     <img src={firstScreenImage} alt="about"/>
                     <img src={firstScreenImage} alt="about"/>
                     <img src={firstScreenImage} alt="about"/>
