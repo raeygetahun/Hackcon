@@ -1,25 +1,68 @@
 .team-section {
-    background-color: white;
-    align-content: center;
+    background-color: #edebeb;
 }
 
 .text-container-team {
-    padding: 20px;
-}
-
-.image-container-team {
     padding: 40px;
 }
 
-.image-container-team img {
-    width: 100%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
+.text-container-team h {
+    color: black;
+    font-size: 56px;
+    letter-spacing: 0;
+    line-height: 47px;
+    font-weight: normal;
+}
+
+.image-container-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.image-container-team .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+    width: 270px;
+}
+
+.image-container-team .team-member img {
+    width: 100%;
     height: auto;
 }
 
-.team-section h1 {
+.image-container-team .name-overlay {
+    width: 240px;
+    height: 60px;
+    background-color: white;
+    text-align: left;
     color: black;
-    font-size: 54px;
-    letter-spacing: 5px;
-    line-height: 96px;
+    padding: 10px;
+    position: relative;
+    right: -25px;
+    top: -35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.name-overlay h1 {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 17px;
+    font-weight: normal;
+    margin-bottom: 1px;
+}
+
+.name-overlay p {
+    color: black;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 13px;
     font-weight: normal;
 }
