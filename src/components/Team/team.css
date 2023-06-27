@@ -1,0 +1,25 @@
+.team-section {
+    background-color: white;
+    align-content: center;
+}
+
+.text-container-team {
+    padding: 20px;
+}
+
+.image-container-team {
+    padding: 40px;
+}
+
+.image-container-team img {
+    width: 100%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
+    height: auto;
+}
+
+.team-section h1 {
+    color: black;
+    font-size: 54px;
+    letter-spacing: 5px;
+    line-height: 96px;
+    font-weight: normal;
+}
