@@ -13,6 +13,14 @@ const WhyHackCon = () => {
           in the field of AI. We provide a unique environment that fosters
           creativity, innovation, and learning.
         </p>
+        <a
+          className="learn-more"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+          target="_blank"
+        >
+          Learn More
+          <span className="arrow"></span>
+        </a>
       </div>
     </div>
   );
