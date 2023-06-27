@@ -1,10 +1,12 @@
 import React from "react";
 import "./WhyHackCon.css";
-
+import useScrollHandler from "../../../hooks/useScrollHandler";
 const WhyHackCon = () => {
+  const isLineActive = useScrollHandler("targetClassName"); // Replace "targetClassName" with the actual class name of your target element
+
   return (
     <div style={{ width: "980px", height: "880px", margin: "0 auto" }}>
-      <div className="box">
+      <div className={`box ${isLineActive ? "active" : ""}`}>
         <span className="header-text">WHY HACKCON</span>
         <span className="title-text">A Different Kind of Hackathon</span>{" "}
         <p className="body-text">
