@@ -30,9 +30,9 @@
 .ShortLine.active {
     transform: translateY(-50px); /* Adjust the translation value as needed */
 }
-/* 
+
 .AboutTextWrapper {
-    margin: 0px 0px 0px 40px;
+    margin: 0 0 0 40px;
     width: 70%;
     padding: 40px;
     text-align: justify;
@@ -57,7 +57,7 @@
 }
 
 .HackconInNumbersWrapper h4 {
-    margin: 130px 0px 40px 0px;
+    margin: 130px 0 40px 0;
     font-size: 1.5em;
     font-weight: 400;
 }
@@ -68,17 +68,17 @@
 }
 
 .stats {
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0 0 0;
 }
 
 .statnumbers {
-    padding: 10px 0px;
+    padding: 10px 0;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .numbersText {
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .HackconInNumbersWrapper {
