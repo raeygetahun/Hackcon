@@ -1,0 +1,80 @@
+.partners-section {
+    background-color: black;
+    text-align: left;
+}
+
+.content-container-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-container-partners {
+    margin-left: 20px;
+    width: 40%;
+    padding: 40px;
+    text-align: justify;
+}
+
+.image-container-partners {
+    width: 50%;
+    margin-right: 150px;
+}
+
+.image-container-partners img {
+    width: 100%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
+    height: auto;
+}
+
+.partners-section h1 {
+    color: ghostwhite;
+    font-size: 14px;
+    margin-top: -80px; /* space above the first line of text */
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+    line-height: 12px;
+    font-weight: normal;
+}
+
+.partners-section p {
+    color: ghostwhite;
+    width: 330px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+/* vertical line with moving short line */
+.line-partners {
+    position: relative;
+    width: 1px;
+    height: 350px;
+    background-color: rgba(248, 248, 255, 0.8);
+    margin-top: -40px;
+    margin-left: 90px;
+}
+
+.moving-element-partners {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    width: 4px;
+    height: 80px;
+    background-color: white;
+    opacity: 0;
+    animation: move-partners 1.5s 1 linear forwards;
+}
+
+@keyframes move-partners {
+    0% {
+        opacity: 0.4;
+        transform: translateX(-50%) translateY(120px);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateX(-50%) translateY(40px);
+    }
+}
