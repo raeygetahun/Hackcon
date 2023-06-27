@@ -23,7 +23,7 @@
 }
 
 .image-container-partners img {
-    width: 25%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
+    width: 100%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
     height: auto;
 }
 

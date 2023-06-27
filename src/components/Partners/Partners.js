@@ -39,9 +39,6 @@ const Partners = () => {
                 </div>
                 <div className="image-container-partners">
                     <img src={firstScreenImage} alt="about"/>
-                    <img src={firstScreenImage} alt="about"/>
-                    <img src={firstScreenImage} alt="about"/>
-                    <img src={firstScreenImage} alt="about"/>
                 </div>
             </div>
         </section>
