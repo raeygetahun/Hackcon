@@ -1,89 +1,180 @@
 .About {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .AboutText {
-  position: relative;
+    position: relative;
 }
 
 .VerticalLine {
-  width: 1px;
-  border-left: 1px solid #fff;
-  height: 60%;
-  background-color: #000000;
-  position: absolute;
-  top: 90px;
-  left: 10%;
+    width: 1px;
+    border-left: 1px solid #fff;
+    height: 60%;
+    background-color: #000000;
+    position: absolute;
+    top: 90px;
+    left: 10%;
 }
 
 .ShortLine {
-  width: 1px;
-  border-left: 3px solid #fff;
-  height: 20%; /* Adjust the height as needed */
-  position: absolute;
-  top: 200px; /* Adjust the top position as needed */
-  left: 10%;
-  transition: transform 1.2s ease-in-out; /* Add transition effect */
+    width: 1px;
+    border-left: 3px solid #fff;
+    height: 20%; /* Adjust the height as needed */
+    position: absolute;
+    top: 200px; /* Adjust the top position as needed */
+    left: 10%;
+    transition: transform 1.2s ease-in-out; /* Add transition effect */
 }
 
 .ShortLine.active {
-  transform: translateY(-50px); /* Adjust the translation value as needed */
+    transform: translateY(-50px); /* Adjust the translation value as needed */
 }
 
 .AboutTextWrapper {
-  margin: 0px 0px 0px 40px;
-  width: 70%;
-  padding: 40px;
-  text-align: left;
+    margin: 0 0 0 40px;
+    width: 70%;
+    padding: 40px;
+    text-align: justify;
 }
+
+.AboutTextWrapper h4 {
+    color: ghostwhite;
+    font-size: 14px;
+    margin-top: 50px; /* space above the first line of text */
+    letter-spacing: 2px;
+    line-height: 12px;
+    font-weight: normal;
+}
+
+.AboutTextWrapper p {
+    color: ghostwhite;
+    width: 450px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
 .HackconInNumbersWrapper h4 {
-  margin: 130px 0px 40px 0px;
-  font-size: 1.5em;
-  font-weight: 400;
+    margin: 130px 0 40px 0;
+    font-size: 1.5em;
+    font-weight: 400;
 }
+
 .numbersgrid {
-  position: relative;
-  /* margin: 0px 0px 0px 0px; */
+    position: relative;
+    /* margin: 0px 0px 0px 0px; */
 }
+
 .stats {
-  margin: 25px 0px 0px 0px;
+    margin: 25px 0 0 0;
 }
+
 .statnumbers {
-  padding: 10px 0px;
-  font-size: 1.5em;
-  font-weight: bold;
+    padding: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
 }
+
 .numbersText {
-  padding: 10px 0px;
+    padding: 10px 0;
 }
-.HackconInNumbersWrapper{
+
+.HackconInNumbersWrapper {
     text-align: left;
-  }
-  
+}
 
 .HorizontalLine {
-  height: 1px;
-  width: 60%;
-  background-color: #000000;
-  position: absolute;
-  /* top: 90px;
-    left: 10%; */
+    height: 1px;
+    width: 60%;
+    background-color: #000000;
+    position: absolute;
+    /* top: 90px;
+      left: 10%; */
 }
 
 .ShortHorizontalLine {
-  height: 3px;
-  width: 15%; /* Adjust the height as needed */
-  position: absolute;
-  left: 150px;
-  border-top: 3px solid #000000;
-  /*top: 200px; /* Adjust the top position as needed */
-  /* left: 10%; */
-  /* top: 0;
-    left: 0; */
-  transition: transform 1.5s ease-in-out; /* Add transition effect */
+    height: 3px;
+    width: 15%; /* Adjust the height as needed */
+    position: absolute;
+    left: 150px;
+    border-top: 3px solid #000000;
+    /*top: 200px; /* Adjust the top position as needed */
+    /* left: 10%; */
+    /* top: 0;
+      left: 0; */
+    transition: transform 1.5s ease-in-out; /* Add transition effect */
 }
 
 .ShortHorizontalLine.active {
-  transform: translateX(-126px);
+    transform: translateX(-126px);
 }
+
+.container {
+  display: flex;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: black;
+  background-size: cover;
+
+}
+
+.header1 {
+  float:left;
+  padding: 20px;
+  position: relative;
+  color:white;
+  border-bottom: 2px solid white;
+}
+
+.header {
+  color: black;
+  width: 100%; 
+}
+
+.textdiv {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+
+.textdiv1 {
+  display: inline-block;
+  width: 25%;
+  flex-direction: column;
+  margin: 80px;
+}
+
+.textdiv1 p {
+  color: white;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #555555;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.line {
+  height: 5px;
+  width: 400px;
+  background-color: var(--brd);
+  transition: transform 0.3s ease;
+  transform: translateX(0%);
+  opacity: var(--alpha-brd);
+  transform-origin: center 0.5px;
+  border-bottom: 2px solid black;
+} 
