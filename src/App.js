@@ -12,7 +12,7 @@ import WhocanParticpate from "./components/About/WhocanParticpate";
 import Speakers from "./components/Speakers/Speakers";
 import Schedule from "./components/Schedule/Schedule";
 import Partners from "./components/Partners/Partners";
-import Team from "./components/Team/Team";
+import OurTeam from "./components/OurTeam/Ourteam";
 import FAQ from "./components/FAQ/FAQ";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <Speakers />
       <Schedule />
       <Partners />
-      <Team />
+      <OurTeam />
       <FAQ />
       <Address />
       <Footer />
