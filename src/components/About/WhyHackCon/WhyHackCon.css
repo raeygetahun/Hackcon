@@ -25,6 +25,7 @@
 	align-self: start;
 }
 
+<<<<<<< HEAD
 .title-text {
 	color: rgb(255, 255, 255);
 	letter-spacing: 0.08em;
@@ -54,6 +55,29 @@
 	word-break: break-word;
 	text-align: left;
 	width: calc(100% - 92px);
+=======
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.learn-more-box {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+>>>>>>> origin
 }
 
 .learn-more {
