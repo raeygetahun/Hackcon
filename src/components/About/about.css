@@ -1,4 +1,57 @@
+.AboutTextWrapper p {
+    color: ghostwhite;
+    width: 450px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: normal;
+}
 
+.HackconInNumbersWrapper h4 {
+    margin: 130px 0 40px 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 43px;
+    font-weight: normal;
+}
+
+.numbersgrid {
+    position: relative;
+    /* margin: 0px 0px 0px 0px; */
+}
+
+.stats {
+    margin: 25px 0 0 0;
+}
+
+.statnumbers {
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    line-height: 33px;
+}
+
+.numbersText {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 12px;
+}
+
+.HackconInNumbersWrapper {
+    text-align: left;
+}
+
+.HorizontalLine {
+    height: 1px;
+    width: 60%;
+    background-color: #000000;
+    position: absolute;
+    /* top: 90px;
+      left: 10%; */
+}
 
 .ShortHorizontalLine {
     height: 3px;
@@ -43,10 +96,25 @@
   width: 100%; 
 }
 
+.header h2 {
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
 .textdiv {
   display: flex;
   width: 50%;
   flex-direction: row;
+}
+
+.textdiv p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 14px;
+    font-weight: normal;
 }
 
 .textdiv1 {
