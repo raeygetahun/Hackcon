@@ -2,7 +2,34 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: left;
     height: 100vh;
+}
+
+.content {
+    text-align: justify;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 12px;
+}
+
+.container h3 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 43px;
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
 .box {
@@ -16,11 +43,6 @@
     align-items: center;
     padding: 40px;
     border-radius: 20px;
-}
-
-.content {
-    text-align: center;
-    color: #fff;
 }
 
 .title {
@@ -52,16 +74,20 @@
     justify-content: center;
     text-decoration: none;
     color: #000;
-    font-family: 'Circular Std', sans-serif;
     font-size: 18px;
 }
 
 .learn-more-text {
     margin-right: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 22px;
 }
 
 .arrow {
     font-size: 20px;
+    font-weight: normal;
 }
 
 .scroll-line {
