@@ -15,14 +15,11 @@ const TechTalks = () => {
             field of AI and gain valuable insights into the latest trends and
             technologies. Join us for a day of inspiration and learning.
           </p>
+          <a className="learnMoreWrapper" href="#">
+            Learn More
+          </a>
+          <div className="arrowDirection">&#x1F862;</div>
         </div>
-        <a
-          className="learn-more-tech"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-        >
-          Learn More
-          <span className="arrow-tech"></span>
-        </a>
       </div>
       <div className="image-subcomponent">
         <img src={firstPageImage} alt="HackCon" />
