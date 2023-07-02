@@ -8,7 +8,7 @@ function WhattoExpect() {
     <div className="WhattoExpect">
       <div className="WhattoExpectHeader">What to Expect</div>
       <div style={{width: '40%'}} className="HorizontalLine"></div>
-      <div style={{width: '7%', left: '165px'}}
+      <div style={{width: '7%', left: '165.8px'}}
         className={`ShortHorizontalLine ${isLineActive ? "active" : ""}`}
       ></div>
       <div className="WhattoExpectWrapper">
