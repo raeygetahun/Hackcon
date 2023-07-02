@@ -1,80 +1,88 @@
 .partners-section {
-    background-color: black;
-    text-align: left;
+  background-color: black;
+  text-align: left;
 }
 
 .content-container-partners {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .text-container-partners {
-    margin-left: 20px;
-    width: 40%;
-    padding: 40px;
-    text-align: justify;
+  margin-left: 20px;
+  width: 40%;
+  padding: 40px;
+  text-align: justify;
 }
 
 .image-container-partners {
-    width: 50%;
-    margin-right: 150px;
+  width: 50%;
+  margin-right: 150px;
 }
 
-.image-container-partners img {
-    width: 100%; /* change depending on the number of images (it's possible to create a separate picture with all the partners' logos and paste it here)*/
-    height: auto;
+.partnersimage {
+  width: 100%; 
+  height: auto;
+  opacity: 0;
+  transform: scale(1); 
+  transition: opacity 3.0s ease-in-out, transform 1.5s ease-in-out;
+}
+.partnersimage.active {
+  opacity: 1;
+}
+.partnersimage:hover {
+  transform: scale(1.5); 
+  transition: transform 0.5s ease-in-out;
 }
 
 .partners-section h1 {
-    color: ghostwhite;
-    font-size: 14px;
-    margin-top: -80px; /* space above the first line of text */
-    margin-bottom: 100px;
-    letter-spacing: 2px;
-    line-height: 12px;
-    font-weight: normal;
+  color: ghostwhite;
+  font-size: 14px;
+  margin-top: -80px; /* space above the first line of text */
+  margin-bottom: 100px;
+  letter-spacing: 2px;
+  line-height: 12px;
+  font-weight: normal;
 }
 
 .partners-section p {
-    color: ghostwhite;
-    width: 330px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 25px;
-    font-weight: normal;
+  color: ghostwhite;
+  width: 330px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-weight: normal;
 }
 
 /* vertical line with moving short line */
 .line-partners {
-    position: relative;
-    width: 1px;
-    height: 350px;
-    background-color: rgba(248, 248, 255, 0.8);
-    margin-top: -40px;
-    margin-left: 90px;
+  position: relative;
+  width: 1px;
+  height: 350px;
+  border-right: 1.5px solid #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -40px;
+  margin-left: 90px;
 }
 
 .moving-element-partners {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(100px);
-    width: 4px;
-    height: 80px;
-    background-color: white;
-    opacity: 0;
-    animation: move-partners 1.5s 1 linear forwards;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  width: 4px;
+  height: 80px;
+  border-right: 3px solid #fff;
+  animation: move-partners 1.5s 1 linear forwards;
 }
 
 @keyframes move-partners {
-    0% {
-        opacity: 0.4;
-        transform: translateX(-50%) translateY(120px);
-    }
-    100% {
-        opacity: 0.9;
-        transform: translateX(-50%) translateY(40px);
-    }
+  0% {
+    transform: translateX(-50%) translateY(120px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(40px);
+  }
 }
