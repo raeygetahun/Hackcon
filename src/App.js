@@ -2,11 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Welcome from "./components/Welcome/Welcome";
 import AboutText from "./components/About/AboutText";
-import "./App.css";
-import WhyHackCon from "./components/About/WhyHackCon/WhyHackCon";
-import Address from "./components/Contact/Contact";
 import HackconInNumbers from "./components/About/HackconInNumbers";
-import Footer from "./components/Footer/Footer";
+import WhyHackCon from "./components/About/WhyHackCon/WhyHackCon";
 import WhattoExpect from "./components/WhatAndWho/WhattoExpect";
 import WhocanParticpate from "./components/WhatAndWho/WhoCanParticipate";
 import Speakers from "./components/Speakers/Speakers";
@@ -14,7 +11,9 @@ import Schedule from "./components/Schedule/Schedule";
 import Partners from "./components/Partners/Partners";
 import Team from "./components/Team/Team";
 import FAQ from "./components/FAQ/FAQ";
-import TechTalks from "./components/About/TechTalks";
+import Address from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
@@ -26,8 +25,6 @@ function App() {
       <WhyHackCon />
       <WhattoExpect />
       <WhocanParticpate />
-
-      <TechTalks />
       <Speakers />
       <Schedule />
       <Partners />

@@ -16,12 +16,13 @@ const TechTalks = () => {
             technologies. Join us for a day of inspiration and learning.
           </p>
         </div>
-        <div className="learn-more-tech-wrapper">
-          <a className="learn-more-tech" href="#">
-            Learn More
-          </a>
-          <span className="arrow-tech-talk"></span>
-        </div>
+        <a
+          className="learn-more-tech"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+        >
+          Learn More
+          <span className="arrow-tech"></span>
+        </a>
       </div>
       <div className="image-subcomponent">
         <img src={firstPageImage} alt="HackCon" />
