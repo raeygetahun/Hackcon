@@ -60,43 +60,6 @@
   padding: 2.5px 15px 8px;
 }
 
-.learnmorearrow {
-  display: inline;
-  border-left: solid 2px #000000;
-}
-
-.learn-more-tech {
-  color: #000000;
-  background-color: #ffffff;
-  border-radius: 5px;
-  letter-spacing: 0.1em;
-  display: inline-block;
-  font: normal normal normal 16px/1.4em montserrat, sans-serif;
-  text-decoration: none;
-  position: relative;
-  text-align: center;
-  left: 92px;
-  top: 50px;
-  border: solid black;
-  width: 150px;
-}
-
-.arrow-tech {
-  position: absolute;
-  top: 50%;
-  right: -12px;
-  transform: translateY(-50%);
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.learn-more-tech:hover .arrow {
-  transform: translateY(-50%) rotate(90deg);
-}
-
 .image-container {
   /* CSS properties and values */
   position: relative;
