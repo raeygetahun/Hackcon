@@ -9,11 +9,12 @@ function WhoCanParticpate() {
     <div className="WhoCanParticpate">
       <div className="WhoCanParticpateHeader">Who can Particpate</div>
       <div
-        style={{ width: "40%", backgroundColor: "#ffff" }}
+        style={{ width: "40%", backgroundColor: "#ffff",
+    borderBottom: "1px solid #fff" }}
         className="HorizontalLine"
       ></div>
       <div
-        style={{ width: "7%", left: "165px", borderTop: "3px solid #ffff" }}
+        style={{ width: "7%", left: "165.5px", borderTop: "3px solid #ffff" }}
         className={`ShortHorizontalLine ${isLineActive ? "active" : ""}`}
       ></div>
       <div className="WhoCanParticpateWrapper">
