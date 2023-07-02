@@ -1,28 +1,36 @@
 import React from "react";
 import "./WhyHackCon.css";
+import useScrollHandler from "../../../hooks/useScrollHandler";
+import firstScreenImage from "../../../assets/first-screen.png";
 
 const WhyHackCon = () => {
+  const isLineActive = useScrollHandler("targetClassName"); // Replace "targetClassName" with the actual class name of your target element
+
   return (
-    <div className="container">
-      <div className="box">
-        <div className="content">
-          <h2 className="title">WHY HACKCON</h2>
-          <h3 className="subtitle">A Different Kind of<br/>Hackathon</h3>
-          <p className="description">
-            Hackcon is not just about building cool projects. It's about
-            collaborating with like-minded individuals and learning from experts
-            in the field of AI. We provide a unique environment that fosters
-            creativity, innovation, and learning.
-          </p>
-          <div className="learn-more-box">
-            <a href="https://www.example.com" className="learn-more">
-              <span className="learn-more-text">Learn More</span>
-              { /*more accurate: &#129130; but needs a workaround */}
-              <span className="arrow">&#10132;</span>
-            </a>
-          </div>
-        </div>
-        <div className="scroll-line"></div>
+    <div style={{ width: "980px", height: "880px", margin: "0 auto" }}>
+      <div className={`box ${isLineActive ? "active" : ""}`}>
+        <span className="header-text">WHY HACKCON</span>
+        <span className="title-text">A Different Kind of Hackathon</span>{" "}
+        <p className="body-text">
+          Hackcon is not just about building cool projects. It's about
+          collaborating with like-minded individuals and learning from experts
+          in the field of AI. We provide a unique environment that fosters
+          creativity, innovation, and learning.
+        </p>
+        <a
+          className="learn-more"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+        >
+          Learn More
+          <span className="arrow"></span>
+        </a>
+      </div>
+      <div className="image-container">
+        <img
+          src={firstScreenImage}
+          alt="HackCon"
+          style={{ maxWidth: "40%", maxHeight: "600px" }}
+        />
       </div>
     </div>
   );

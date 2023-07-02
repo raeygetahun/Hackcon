@@ -1,3 +1,60 @@
+.box {
+	width: 490px;
+	height: 664px;
+	background-color: #000000;
+	position: relative;
+	margin: 67px 0px 10px calc((100% - 980px) * 0.5);
+	left: 0px;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+	border-radius: 16px;
+}
+
+.header-text {
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.16em;
+	font: normal normal normal 14px/1.4em montserrat, sans-serif;
+	/* overflow-wrap: break-word; */
+	text-align: start;
+	position: absolute;
+	margin: 56px 0px 42px 0;
+	left: 92px;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+}
+
+.title-text {
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.08em;
+	font: normal normal normal 24px/1.4em montserrat, sans-serif;
+	position: absolute;
+	margin: 125px 0px 10px 0;
+	left: 92px;
+	grid-area: 2 / 1 / 3 / 2;
+	justify-self: start;
+	align-self: start;
+	word-break: break-word;
+	text-align: left;
+	width: calc(100% - 92px);
+}
+
+.body-text {
+	color: white;
+	letter-spacing: 0.05em;
+	font: normal normal normal 16px/1.7em montserrat, sans-serif;
+	position: absolute;
+	margin: 0;
+	top: 300px; /* Adjust the top positioning as needed */
+	left: 92px;
+	grid-area: 3 / 1 / 4 / 2;
+	justify-self: start;
+	align-self: start;
+	word-break: break-word;
+	text-align: left;
+	width: calc(100% - 92px);
+
 .container {
     display: flex;
     justify-content: flex-start;
@@ -32,19 +89,6 @@
     line-height: 25px;
 }
 
-.box {
-    width: 490px;
-    height: 664px;
-    background-color: #000;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    border-radius: 20px;
-}
-
 .title {
     font-size: 36px;
     font-weight: bold;
@@ -69,33 +113,46 @@
 }
 
 .learn-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-}
-
-.learn-more-text {
-    margin-right: 10px;
-    font-size: 15px;
-    font-weight: normal;
-    letter-spacing: 0;
-    line-height: 22px;
+	color: #ffffff;
+	background-color: #000000;
+	border-radius: 5px;
+	font: normal normal normal 16px/1.4em montserrat,sans-serif;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	display: inline-block;
+	position: absolute;
+	text-align: center;
+	top: 550px;
+	left: 92px;
+	border: solid white;
+	width: 150px;
 }
 
 .arrow {
-    font-size: 20px;
-    font-weight: normal;
+	position: absolute;
+	top: 50%;
+	right: -12px;
+	transform: translateY(-50%);
+	border: solid #ffffff;
+	border-width: 0 2px 2px 0;
+	padding: 3px;
+	pointer-events: none;
+	transition: all 0.3s ease;
 }
 
-.scroll-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background-color: #fff;
-    z-index: 1;
+.learn-more:hover .arrow {
+	transform: translateY(-50%) rotate(90deg);
 }
+
+.image-container {
+	/* CSS properties and values */
+	position: relative;
+	margin: -600px 0px 0px calc((100% - 980px) * 0.5);
+	left: 400px;
+	grid-area: 1 / 1 / 2 / 2;
+	justify-self: start;
+	align-self: start;
+}
+
+
+
