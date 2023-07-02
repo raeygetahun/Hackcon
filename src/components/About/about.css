@@ -47,15 +47,16 @@
 .HorizontalLine {
     height: 1px;
     width: 60%;
-    background-color: #000000;
-    position: absolute;
+    border-bottom: 1px solid #000000;
+    background-color: #fff;
+    /* position: absolute; */
     /* top: 90px;
       left: 10%; */
 }
 
 .ShortHorizontalLine {
     height: 3px;
-    width: 15%; /* Adjust the height as needed */
+    width: 10%; /* Adjust the height as needed */
     position: absolute;
     left: 150px;
     border-top: 3px solid #000000;
