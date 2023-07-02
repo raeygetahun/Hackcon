@@ -1,39 +1,40 @@
 .team-section {
     background-color: #edebeb;
-}
-
-.text-container-team {
     padding: 40px;
-}
-
-.text-container-team h {
+  }
+  
+  .text-container-team {
+    margin-bottom: 40px;
+  }
+  
+  .text-container-team h1 {
     color: black;
     font-size: 56px;
     letter-spacing: 0;
     line-height: 47px;
     font-weight: normal;
-}
-
-.image-container-team {
+  }
+  
+  .image-container-team {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.image-container-team .team-member {
+    justify-content: space-between;
+  }
+  
+  .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 60px;
+    margin-bottom: 40px;
     width: 270px;
-}
-
-.image-container-team .team-member img {
+  }
+  
+  .team-member img {
     width: 100%;
     height: auto;
-}
-
-.image-container-team .name-overlay {
+  }
+  
+  .name-overlay {
     width: 240px;
     height: 60px;
     background-color: white;
@@ -43,26 +44,46 @@
     position: relative;
     right: -25px;
     top: -35px;
-
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.name-overlay h1 {
+  }
+  
+  .name-overlay h1 {
     color: black;
     font-size: 20px;
     letter-spacing: 0;
     line-height: 17px;
     font-weight: normal;
     margin-bottom: 1px;
-}
-
-.name-overlay p {
+  }
+  
+  .name-overlay p {
     color: black;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 13px;
     font-weight: normal;
-}
+  }
+  .team-member img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s ease;
+  }
+  
+  .team-member:hover img {
+    transform: scale(1.1);
+  }
+  
+  .name-overlay {
+    transition: opacity 0.3s ease;
+  }
+  
+  .team-member:hover .name-overlay {
+    opacity: 0.8;
+    background-color: rgb(191, 190, 190);
+  }
+  
+  
