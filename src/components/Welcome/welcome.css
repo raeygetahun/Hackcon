@@ -13,6 +13,9 @@
     align-items: center;
     color: #000000;
 }
+.welcomeWrapper{
+    /* margin-top: 250px; */
+}
 
 .welcome-section::after {
     content: "";
@@ -26,7 +29,9 @@
 
 .welcome-section h1 { /* join us at hackcon */
     font-size: 64px;
-    margin-top: -250px; /* space above the first line of text */
+    margin-top: -50px;
+    /* margin-top: -250px;  */
+    /* space above the first line of text */
     letter-spacing: 5px;
     line-height: 96px;
     font-weight: normal;

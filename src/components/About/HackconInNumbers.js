@@ -3,6 +3,10 @@ import "./about.css";
 import { Grid } from "@mui/material";
 import useScrollHandler from "../../hooks/useScrollHandler";
 import hero_hackathons from "../../assets/first-screen.png";
+import hero_hackathons1 from "../../assets/constructorhack1.png";
+import hero_hackathons2 from "../../assets/constructorhack-2.png";
+
+
 
 const Statistic = ({ number, text, index, isLineActive }) => {
   const [isActive, setIsActive] = useState(false);
@@ -47,6 +51,7 @@ const Statistic = ({ number, text, index, isLineActive }) => {
 
 const HackconInNumbers = () => {
   const isLineActive = useScrollHandler("ShortHorizontalLine");
+  const isLogoActive = useScrollHandler("numbersgrid");
 
   const statisticsData = [
     { number: "100", text: "PARTICIPANTS" },
@@ -58,16 +63,16 @@ const HackconInNumbers = () => {
   return (
     <div>
       <Grid container spacing={3}>
-        <Grid item md={6} style={{ padding: "135px 75px" }}>  
-          <img
-            src={hero_hackathons}
+        <Grid item md={6} style={{ padding: "95px 75px" }}>  
+          <img className={`logoForHackCon ${isLogoActive ? "active" : ""}`}
+            src={hero_hackathons2}
             style={{ maxWidth: "100%", height: "100%" }}
           />
         </Grid>
 
   <Grid item md={6} style={{ textAlign: "center" }}>
           <div className="HackconInNumbersWrapper">
-            <h4>Hackcon In Numbers</h4>
+            <h4>ConstructorHack In Numbers</h4>
             <Grid container spacing={3}>
               <Grid></Grid>
               {statisticsData.map((statistic, index) => (

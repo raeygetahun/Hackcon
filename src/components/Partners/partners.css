@@ -27,7 +27,7 @@
   height: auto;
   opacity: 0;
   transform: scale(1); 
-  transition: opacity 3.0s ease-in-out, transform 1.5s ease-in-out;
+  transition: opacity 1.0s ease-in-out, transform 1.5s ease-in-out;
 }
 .partnersimage.active {
   opacity: 1;

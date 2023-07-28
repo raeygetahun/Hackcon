@@ -66,7 +66,7 @@ const PartnersElement = ({ index, isLineActive }) => {
 };
 
 const Partners = () => {
-  const isLineActive = useScrollHandler("partners-section");
+  const isLineActive = useScrollHandler("line-partners");
   const movingElementPartnersRef = useRef(null);
 
   useEffect(() => {
@@ -103,7 +103,7 @@ const Partners = () => {
           ></div>
         </div>
         <div className="text-container-partners">
-          <h1>OUR PARTNERS</h1>
+          <h1>PREVIOUSLY PARTNERED WITH</h1>
           <br />
           <p>
             We are proud to partner with some of the most innovative companies

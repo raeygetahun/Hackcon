@@ -13,7 +13,7 @@ const FAQ = () => {
     {
       question: "Who can attend?",
       answer:
-        "Hackcon! 2023 is open is open to students (from high school students over 16 years of age to post-docs) and those that have graduated from university in the past twelve months. To participate you must accept the MLH Code Of Conduct.",
+        "ConstructorHack! 2023 is open is open to students (from high school students over 16 years of age to post-docs) and those that have graduated from university in the past twelve months. To participate you must accept the MLH Code Of Conduct.",
     },
     {
       question: "Can I attend even if I don’t know how to code?",
@@ -72,7 +72,7 @@ const FAQ = () => {
   ];
 
   return (
-<div>
+<div className="FAQ-section">
       <h1>FAQ</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>

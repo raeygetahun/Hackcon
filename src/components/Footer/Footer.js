@@ -23,7 +23,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="footer-text">
-        &copy; {new Date().getFullYear()} Hackcon. All rights reserved.
+        &copy; {new Date().getFullYear()} ConstructorHack. All rights reserved.
         <br/>
         Designed and Developed by IT Department.
       </p>
