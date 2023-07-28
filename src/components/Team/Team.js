@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import Andrei from "../../assets/team/andrei.jpg";
-import Raey from "../../assets/team/raey.jpg";
+// import Raey from "../../assets/team/raey.jpg";
 import Khadija from "../../assets/team/khadija.jpg";
 import Sanidhya from "../../assets/team/sanidhya.jpg";
 import ruth from "../../assets/team/ruth.jpg";
@@ -35,10 +35,15 @@ const Team = () => {
       role: "Main Oraganisor",
     },
     {
-      image: Raey,
-      name: "Raey Getahun",
-      role: "Head of IT",
+      image: Sanidhya,
+      name: "Sanidhya ",
+      role: "Head of ... ",
     },
+    // {
+    //   image: Raey,
+    //   name: "Raey Getahun",
+    //   role: "Head of IT",
+    // },
     {
       image: ruth,
       name: "Ruth Jebessa",
@@ -46,11 +51,6 @@ const Team = () => {
     },
     {
       image: Khadija,
-      name: "Khadija Soua",
-      role: "Head of Design & Marketing ",
-    },
-    {
-      image: Sanidhya,
       name: "Khadija Soua",
       role: "Head of Design & Marketing ",
     },

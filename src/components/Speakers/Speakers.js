@@ -22,7 +22,7 @@ const TechTalks = () => {
         </div>
       </div>
       <div className="image-subcomponent">
-        <img src={firstPageImage} alt="HackCon" />
+        <img style={{height:'1000px'}}src={firstPageImage} alt="HackCon" />
       </div>
     </div>
   );

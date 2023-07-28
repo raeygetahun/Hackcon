@@ -16,6 +16,8 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 100px;
+  height: auto;
+  width: auto;
 }
 
 .image-subcomponent img {
@@ -62,10 +64,10 @@
 
 .image-container {
   /* CSS properties and values */
-  position: relative;
+  /* position: relative;
   margin: -600px 0px 0px calc((100% - 980px) * 0.5);
   left: 400px;
   grid-area: 1 / 1 / 2 / 2;
   justify-self: start;
-  align-self: start;
+  align-self: start; */
 }

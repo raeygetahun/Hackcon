@@ -23,8 +23,8 @@ const WhattoExpect = () => {
         <div className="line" style={{ transform: `translateX(${scrollPosition}px)` }}></div>
       </div>
       <div className="textdiv">
-        <p>At Hackcon 2023, you can expect to be part of an exciting community of developers, designers, and innovators from all over Europe. Our team has worked hard to create an event that is both challenging and inspiring, with plenty of opportunities to learn, collaborate, and have fun. Whether you're a seasoned pro or just getting started, Hackcon 2023 is the place to be.</p>
-        <p>At Hackcon 2023, you can expect to be part of an exciting community of developers, designers, and innovators from all over Europe. Our team has worked hard to create an event that is both challenging and inspiring, with plenty of opportunities to learn, collaborate, and have fun. Whether you're a seasoned pro or just getting started, Hackcon 2023 is the place to be.</p>      
+        <p>At ConstructorHack 2023, you can expect to be part of an exciting community of developers, designers, and innovators from all over Europe. Our team has worked hard to create an event that is both challenging and inspiring, with plenty of opportunities to learn, collaborate, and have fun. Whether you're a seasoned pro or just getting started, ConstructorHack 2023 is the place to be.</p>
+        <p>At ConstructorHack 2023, you can expect to be part of an exciting community of developers, designers, and innovators from all over Europe. Our team has worked hard to create an event that is both challenging and inspiring, with plenty of opportunities to learn, collaborate, and have fun. Whether you're a seasoned pro or just getting started, ConstructorHack 2023 is the place to be.</p>      
     </div>
     </div>
   );

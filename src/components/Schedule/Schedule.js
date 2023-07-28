@@ -1,5 +1,6 @@
 import React from "react";
 import "./schedule.css"; // Import the CSS file
+import { Grid } from "@mui/material";
 
 const Schedule = () => {
   const scheduleData = [
@@ -32,9 +33,10 @@ const Schedule = () => {
 
   return (
     <div className="schedule-container">
-      <h2 className="schedule-heading">Schedule</h2>
+      <h1 className="schedule-heading">SCHEDULE</h1>
+      <Grid container spacing={2}>
       {scheduleData.map((day, index) => (
-        <div key={index}>
+        <Grid item xs={6} key={index}>
           <ul className="schedule-list">
             <div className="schedule-day">{day.day}</div>
             {day.events.map((event, eventIndex) => (
@@ -44,8 +46,9 @@ const Schedule = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </Grid>
       ))}
+      </Grid>
     </div>
   );
 };

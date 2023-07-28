@@ -1,76 +1,99 @@
-import React, {useEffect} from 'react'
-import {Link} from "react-scroll";
-import './navbar.css'
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import "./navbar.css";
 
 const Navbar = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            const navbar = document.querySelector('.navbar');
-            const scrollThresholdNavbar = 400; // Adjust this value as needed
+  const [isSticky, setSticky] = useState(false);
 
-            if (window.scrollY > scrollThresholdNavbar) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
 
-        window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    return (
-        <nav className="navbar">
-            <div className="logo">HACKCON</div>
-            <ul className="nav-links">
-                <li><Link
-                    to="about-section"
-                    spy={false}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >About</Link></li>
-                <li><Link
-                    to="speakers-section"
-                    spy={false}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >Speakers</Link></li>
-                <li><Link
-                    to="schedule-section"
-                    spy={false}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >Schedule</Link></li>
-                <li><Link
-                    to="team-section"
-                    spy={false}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >Team</Link></li>
-                <li><Link
-                    to="faq-section"
-                    spy={false}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >FAQ</Link></li>
-                <li><Link
-                    to="contact-section"
-                    spy={false}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >Contact</Link></li>
-            </ul>
-        </nav>
-    )
-}
+  return (
+    <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
+      <div className="logo">ConstructorHack</div>
+      <ul className="nav-links">
+        <li>
+          <Link
+            to="About"
+            spy={false}
+            smooth={true}
+            offset={-30}
+            duration={500}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="tech-talks-container"
+            spy={false}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            Speakers
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="schedule-container"
+            spy={false}
+            smooth={true}
+            offset={-20}
+            duration={1500}
+          >
+            Schedule
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="team-section"
+            spy={false}
+            smooth={true}
+            offset={0}
+            duration={1500}
+          >
+            Team
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="FAQ-section"
+            spy={false}
+            smooth={true}
+            offset={-20}
+            duration={1500}
+          >
+            FAQ
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="Contactcontainer"
+            spy={false}
+            smooth={true}
+            offset={-20}
+            duration={1500}
+          >
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
