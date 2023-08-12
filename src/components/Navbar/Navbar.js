@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import oldpic3 from "../../assets/logo.png";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -23,7 +24,9 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
-      <div className="logo">ConstructorHack</div>
+      <div className="logo">
+        {/* <img src={oldpic3} height="100%" width="250px"/> */}
+      </div>
       <ul className="nav-links">
         <li>
           <Link
@@ -38,17 +41,6 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="tech-talks-container"
-            spy={false}
-            smooth={true}
-            offset={-70}
-            duration={1500}
-          >
-            Speakers
-          </Link>
-        </li>
-        <li>
-          <Link
             to="schedule-container"
             spy={false}
             smooth={true}
@@ -56,6 +48,17 @@ const Navbar = () => {
             duration={1500}
           >
             Schedule
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="partners-section"
+            spy={false}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+          >
+            Partners
           </Link>
         </li>
         <li>
@@ -92,6 +95,24 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <a
+        className="MLHlogo"
+        id="mlh-trust-badge"
+        href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white"
+        target="_blank"
+      >
+        <img
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
+          alt="Major League Hacking 2023 Hackathon Season"
+          style={{ width: "100%", height: "auto", maxHeight: "150px" }}
+        />
+      </a>
+
+      {/* <img
+        src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
+        alt="Major League Hacking 2023 Hackathon Season"
+        style={{ width: "100%", height: "150px" }}
+      ></img> */}
     </nav>
   );
 };
