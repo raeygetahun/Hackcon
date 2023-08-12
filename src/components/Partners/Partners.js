@@ -107,7 +107,7 @@ const Partners = () => {
           <br />
           <p>
             We are proud to partner with some of the most innovative companies
-            and organizations in the field of <strong>AI</strong>.
+            and organizations.
           </p>
         </div>
         <div className="image-container-partners">
