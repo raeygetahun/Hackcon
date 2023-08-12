@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import styles from './about.css';
+import React, { useEffect, useState } from "react";
+import styles from "./about.css";
 
 const WhattoExpect = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -10,9 +10,9 @@ const WhattoExpect = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -20,12 +20,29 @@ const WhattoExpect = () => {
     <div className={styles.container}>
       <div className="header">
         <h2>What To Expect</h2>
-        <div className="line" style={{ transform: `translateX(${scrollPosition}px)` }}></div>
+        <div
+          className="line"
+          style={{ transform: `translateX(${scrollPosition}px)` }}
+        ></div>
       </div>
       <div className="textdiv">
-        <p>At ConstructorHack 2023, you can expect to be part of an exciting community of developers, designers, and innovators from all over Europe. Our team has worked hard to create an event that is both challenging and inspiring, with plenty of opportunities to learn, collaborate, and have fun. Whether you're a seasoned pro or just getting started, ConstructorHack 2023 is the place to be.</p>
-        <p>At ConstructorHack 2023, you can expect to be part of an exciting community of developers, designers, and innovators from all over Europe. Our team has worked hard to create an event that is both challenging and inspiring, with plenty of opportunities to learn, collaborate, and have fun. Whether you're a seasoned pro or just getting started, ConstructorHack 2023 is the place to be.</p>      
-    </div>
+        <p>
+          ConstructorHack 2023 is more than just a hackathon – it's an
+          extraordinary community of developers, designers, and innovators. Our
+          devoted team has crafted an event that combines challenges with
+          inspiration, offering abundant opportunities for learning,
+          collaboration, and fun. No matter your experience level,
+          ConstructorHack 2023 is where you belong.
+        </p>
+        <p>
+          Throughout the 24-hour hackathon, our lineup includes workshops, tech
+          talks, and, of course, the hackathon itself. Accompanied by seasoned
+          mentors providing guidance and support, you'll have the chance to
+          network with like-minded individuals. Don't worry about staying fueled
+          up; we've got an array of delicious food, drinks, and snacks to keep
+          you going!
+        </p>
+      </div>
     </div>
   );
 };

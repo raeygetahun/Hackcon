@@ -18,26 +18,27 @@ const AboutText = () => {
             <h4>ABOUT ConstructorHack</h4>
             <br />
             <p>
-              ConstructorHack is a student-run hackathon at Constructor University where
-              individuals from all over Europe come together to collaborate on
-              kick-ass projects. It is a 24 hour event of programming, tech
-              talks, games, and epic Nerf-gun battles. Our theme for the 9th
-              edition of ConstructorHack is <strong>Artificial Intelligence</strong>.
+              ConstructorHack is the thrilling student-run hackathon hosted at
+              Constructor University, bringing together tech enthusiasts from
+              all corners of Europe. For 24 adrenaline-fueled hours,
+              participants collaborate on kick-ass projects while immersing
+              themselves in programming challenges, engaging tech talks,
+              exciting games, and epic Nerf-gun battles. Our theme for the 9th
+              edition of ConstructorHack is{" "}
+              <strong>Artificial Intelligence</strong>.
             </p>
             <br />
             <p>
-              At ConstructorHack, our mission is to provide a platform for individuals
-              to explore new technologies and collaborate on innovative
-              projects. We believe in the power of technology to shape the
-              future, and aim to empower individuals to take the lead in this
-              exciting field.
+              At ConstructorHack, we believe in the transformative power of
+              technology, and our mission is to provide a dynamic platform for
+              individuals to explore new frontiers and embark on innovative
+              ventures. We empower attendees to seize the reins in this
+              thrilling field and contribute to shaping the future.
             </p>
           </div>
         </Grid>
         <Grid item md={6} style={{ padding: "135px 75px" }}>
-          <img
-            src={oldpic3}
-          />
+          <img src={oldpic3} />
         </Grid>
       </Grid>
     </div>
