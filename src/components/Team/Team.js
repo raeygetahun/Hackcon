@@ -11,7 +11,7 @@ import Timothy from "../../assets/team/Timothy.jpeg";
 import Pratul from "../../assets/team/Pratul.jpg";
 import Arleny from "../../assets/team/Arleny.jpeg";
 import Aya from "../../assets/team/Aya.jpeg";
-import Elizaveta from "../../assets/team/Elizaveta (2).jpg";
+import Elizaveta from "../../assets/team/Elizaveta.jpg";
 import Imane from "../../assets/team/Imane.jpg";
 import Janat from "../../assets/team/Janat.jpeg";
 import Mauricio from "../../assets/team/Mauricio.jpeg";
