@@ -1,20 +1,12 @@
 import React from "react";
 import "./welcome.css";
+import logo from "../../assets/logo.png"
 
 const Welcome = () => {
   return (
     <section id="welcome-section" className="welcome-section">
       <div className="welcomeWrapper">
-        <h1>
-          JOIN US AT ConstructorHack
-          <br />
-          2023
-        </h1>
-        <p>
-          Embrace Cutting-Edge Collaborations and Experience
-          <br />
-          the Future of AI
-        </p>
+        <img src={logo} height="110%"/>
       </div>
     </section>
   );

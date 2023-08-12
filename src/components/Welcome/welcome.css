@@ -1,9 +1,10 @@
 .welcome-section {
     position: relative;
-    background-image: url('../../assets/first-screen.png');
+    /* background-image: url('../../assets/first-screen.png'); */
+    /* background-image: url('../../assets/header_building_spring.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     border: none;
     outline: none;
     height: 100vh;
@@ -11,7 +12,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000000;
+    color: #ffffff;
+    background-color: #312f2f;
 }
 .welcomeWrapper{
     /* margin-top: 250px; */
