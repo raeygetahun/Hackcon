@@ -72,14 +72,16 @@ const FAQ = () => {
   ];
 
   return (
-<div className="FAQ-section">
+    <div className="FAQ-section">
       <h1>FAQ</h1>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           {faqData.slice(0, Math.ceil(faqData.length / 2)).map((faq, index) => (
             <div key={index}>
               <div
-                className={`faq-question ${index === activeIndex ? "active" : ""}`}
+                className={`faq-question ${
+                  index === activeIndex ? "active" : ""
+                }`}
                 onClick={() => handleAccordionClick(index)}
               >
                 {faq.question}
@@ -94,8 +96,14 @@ const FAQ = () => {
           {faqData.slice(Math.ceil(faqData.length / 2)).map((faq, index) => (
             <div key={index}>
               <div
-                className={`faq-question ${index + Math.ceil(faqData.length / 2) === activeIndex ? "active" : ""}`}
-                onClick={() => handleAccordionClick(index + Math.ceil(faqData.length / 2))}
+                className={`faq-question ${
+                  index + Math.ceil(faqData.length / 2) === activeIndex
+                    ? "active"
+                    : ""
+                }`}
+                onClick={() =>
+                  handleAccordionClick(index + Math.ceil(faqData.length / 2))
+                }
               >
                 {faq.question}
               </div>
