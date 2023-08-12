@@ -5,14 +5,15 @@ import { Grid } from "@mui/material";
 const Contact = () => {
   return (
     <div className="Contactcontainer">
+      <h1>CONTACT</h1>
       <Grid container spacing={3}>
         <Grid item className="info" xs={5}>
-          <h2 className="addresstitle">ConstructorHack</h2>
-          <p className="addresssubtitle">Contact Information:</p>
+          {/* <h2 className="addresstitle">ConstructorHack</h2> */}
+          <h2 className="addresssubtitle">Contact Information:</h2>
           <p className="contact-item">Telephone: +1 123 456 7890</p>
           <p className="contact-item">Email: info@ConstructorHack.com</p>
           <p className="contact-item">
-            Address: 123 Main Street, City, State, Country
+            Address: Campus Ring 1, 28759 Bremen
           </p>
         </Grid>
         <Grid item xs={7}>
