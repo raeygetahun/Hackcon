@@ -11,9 +11,11 @@ const TechTalks = () => {
         </div>
         <div className="body-subcomponent">
           <p>
-            Our tech talks offer you the chance to hear from experts in the
-            field of AI and gain valuable insights into the latest trends and
-            technologies. Join us for a day of inspiration and learning.
+            Prepare to be inspired and enlightened! Our exclusive tech talks
+            feature AI experts sharing their insights on the latest trends and
+            groundbreaking technologies in the field of Artificial Intelligence.
+            Be ready to gain invaluable knowledge and fresh perspectives
+            throughout this engaging day of learning.
           </p>
           <a className="learnMoreWrapper" href="#">
             Learn More
@@ -22,7 +24,7 @@ const TechTalks = () => {
         </div>
       </div>
       <div className="image-subcomponent">
-        <img style={{height:'1000px'}}src={firstPageImage} alt="HackCon" />
+        <img style={{ height: "1000px" }} src={firstPageImage} alt="HackCon" />
       </div>
     </div>
   );

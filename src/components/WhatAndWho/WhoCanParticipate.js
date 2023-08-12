@@ -23,12 +23,12 @@ function WhoCanParticpate() {
         <Grid container spacing={3}>
           <Grid item md={6}>
             <p className="FirstParagraph">
-              Hackcon is open to students from all over Europe who are
-              passionate about technology and innovation. There are no specific
-              requirements for participation, other than a willingness to learn
-              and collaborate with others. Whether you are a computer science
-              major or a creative writing student, there is a place for you at
-              Hackcon.
+              ConstructorHack welcomes students from every corner of Europe who
+              share a passion for technology and innovation. No specific
+              requirements are needed to join the excitement; all you need is
+              the desire to learn and collaborate. Whether you're a computer
+              science guru or a creative writing aficionado, ConstructorHack has
+              a spot for you.
             </p>
           </Grid>
           <Grid item md={6}>
@@ -36,12 +36,12 @@ function WhoCanParticpate() {
               {" "}
               Come join us and be a part of the next generation of innovators
               and entrepreneurs! Click the button below to apply now.
-              <br /><br />
+              <br />
+              <br />
               <a className="applyWrapper" href="#">
                 Apply Now
               </a>
               <div className="applyarrowDirection">&#x1F862;</div>
-      
             </p>
           </Grid>
         </Grid>

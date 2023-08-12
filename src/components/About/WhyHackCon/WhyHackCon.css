@@ -10,7 +10,8 @@
   justify-self: start;
   align-self: start;
   border-radius: 16px;
-  transition: transform 1.7s ease, box-shadow 1.3s ease;
+  transition: transform 0.7s ease, box-shadow 1.3s ease;
+  padding-left: 20px;
 }
 .box:hover {
   /* box-shadow: 0 0 20px rgba(255, 0, 0, 1.4); */
@@ -63,6 +64,7 @@
   word-break: break-word;
   text-align: left;
   width: calc(100% - 92px);
+  padding: 0px 100px 100px 0px;
 }
 /* .container {
     display: flex;
