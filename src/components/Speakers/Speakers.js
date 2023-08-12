@@ -1,6 +1,5 @@
 import React from "react";
 import "./speakers.css";
-import firstPageImage from "../../assets/first-screen.png";
 
 const TechTalks = () => {
   return (
@@ -24,7 +23,7 @@ const TechTalks = () => {
         </div>
       </div>
       <div className="image-subcomponent">
-        <img style={{ height: "1000px" }} src={firstPageImage} alt="HackCon" />
+        {/* <img style={{ height: "1000px" }} src={firstPageImage} alt="HackCon" /> */}
       </div>
     </div>
   );

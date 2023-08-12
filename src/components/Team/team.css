@@ -1,92 +1,67 @@
 .team-section {
-    background-color: #edebeb;
-    padding: 40px;
-  }
-  
-  .text-container-team {
-    margin-bottom: 40px;
-    font-weight: bold;
-  }
-  
-  .text-container-team h1 {
-    color: black;
-    font-size: 36px;
-    letter-spacing: 0;
-    line-height: 47px;
-    font-weight: bold;
-  }
-  
-  .image-container-team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    width: 270px;
-  }
-  /* Montserrat', sans-serif */
-  
-  .team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
-  
-  .name-overlay {
-    width: 240px;
-    height: 60px;
-    background-color: rgb(236, 241, 244);
-    text-align: left;
-    color: black;
-    padding: 10px;
-    position: relative;
-    right: -25px;
-    top: -35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    border-radius: 15px;
-  }
-  
-  .name-overlay h1 {
-    color: black;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 17px;
-    font-weight: normal;
-    margin-bottom: 1px;
-  }
-  
-  .name-overlay p {
-    color: black;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 13px;
-    font-weight: normal;
-  }
-  .team-member img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.7s ease;
-  }
-  
-  .team-member:hover img {
-    transform: scale(1.1);
-  }
-  
-  .name-overlay {
-    transition: opacity 0.3s ease;
-  }
-  
-  .team-member:hover .name-overlay {
-    opacity: 0.8;
-    background-color: rgb(191, 190, 190);
-  }
-  
-  
+  padding: 100px 50px;
+}
+
+.text-container-team {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.text-container-team h1 {
+  color: black;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 47px;
+  font-weight: bold;
+}
+
+.team-member {
+  margin-bottom: 40px;
+  position: relative;
+  margin: 50px 20px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.7s ease;
+}
+
+.name-overlay {
+  position: absolute;
+  bottom: 10;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  /* background-color: rgba(210, 48, 48, 0.8); */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.name-overlay h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.name-overlay p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.image-container-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.team-member:hover .name-overlay {
+  opacity: 0.8;
+  background-color: rgb(233, 46, 46);
+  color: black;
+}
