@@ -12,7 +12,7 @@ const WhyHackCon = () => {
           <div className="VerticalLine"></div>
           <div className={`ShortLine ${isLineActive ? "active" : ""}`}></div>
           <span className="header-text">WHY ConstructorHack</span>
-          <span className="title-text">A Different Kind of Hackathon</span>{" "}
+          <span className="title-text">A Different Kind of<br></br> Hackathon</span>{" "}
           <p className="body-text">
             At ConstructorHack, we go beyond just building cool projects. It's
             about fostering collaboration among like-minded individuals and

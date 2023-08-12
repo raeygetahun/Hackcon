@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
-import hero_hackathons from "../../assets/first-screen.png"; //image subject to change
 import "./about.css";
 import useScrollHandler from "../../hooks/useScrollHandler";
 import oldpic3 from "../../assets/PreviousCompPics/oldpic3.jpg";
