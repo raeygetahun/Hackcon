@@ -25,7 +25,7 @@ function App() {
       <WhyHackCon />
       <WhattoExpect />
       <WhocanParticpate />
-      <Speakers />
+      {/* <Speakers /> */}
       <Schedule />
       <Partners />
       <Team />
