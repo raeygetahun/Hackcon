@@ -6,26 +6,20 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="social-links">
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/constructorhack/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="social-icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaFacebook className="social-icon" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.tiktok.com/@constructorhack23" target="_blank" rel="noopener noreferrer">
           <FaTiktok className="social-icon" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/company/constructorhack/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="social-icon" />
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="social-icon" />
         </a>
       </div>
       <p className="footer-text">
         &copy; {new Date().getFullYear()} ConstructorHack. All rights reserved.
         <br/>
-        Designed and Developed by IT Department.
+        Designed and Developed by IT and Design Team.
       </p>
     </footer>
   );
