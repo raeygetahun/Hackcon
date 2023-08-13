@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b8be83e.css",
-    "main.js": "/static/js/main.860e690a.js",
+    "main.css": "/static/css/main.49749bbc.css",
+    "main.js": "/static/js/main.df51eb15.js",
     "static/js/787.38c2fa2c.chunk.js": "/static/js/787.38c2fa2c.chunk.js",
     "static/media/oldpic4.jpg": "/static/media/oldpic4.08e3d0cc081c2c5859d2.jpg",
     "static/media/Janat.jpeg": "/static/media/Janat.8dbc21b82df9b45c6ce6.jpeg",
@@ -68,12 +68,12 @@
     "static/media/microsoft.svg": "/static/media/microsoft.c41de7169a67f2390129e3b81c97693d.svg",
     "static/media/Makersite_logo.svg": "/static/media/Makersite_logo.24156a5bfd7c11b1fe545149b346d1af.svg",
     "index.html": "/index.html",
-    "main.4b8be83e.css.map": "/static/css/main.4b8be83e.css.map",
-    "main.860e690a.js.map": "/static/js/main.860e690a.js.map",
+    "main.49749bbc.css.map": "/static/css/main.49749bbc.css.map",
+    "main.df51eb15.js.map": "/static/js/main.df51eb15.js.map",
     "787.38c2fa2c.chunk.js.map": "/static/js/787.38c2fa2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b8be83e.css",
-    "static/js/main.860e690a.js"
+    "static/css/main.49749bbc.css",
+    "static/js/main.df51eb15.js"
   ]
 }
