@@ -107,7 +107,7 @@ const Team = () => {
     {
       image: Pratul,
       name: "Pratul Aryan",
-      role: "Member of Recruitment team",
+      role: "Member of Recruitment Team",
       linkedinUserName: "",
     },
     {
@@ -119,7 +119,7 @@ const Team = () => {
     {
       image: Mauricio,
       name: "Mauricio Dávila Alarcón",
-      role: "Member of the Recruitment team & Logistics Teams",
+      role: "Member of the Recruitment & Logistics Teams",
       linkedinUserName: "",
     },
     {
@@ -149,7 +149,7 @@ const Team = () => {
     {
       image: Imane,
       name: "Imane Zerhouni",
-      role: "Member of the Logistics team",
+      role: "Member of the Logistics Team",
       linkedinUserName: "",
     },
     {
