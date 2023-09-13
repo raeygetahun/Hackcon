@@ -49,6 +49,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -59,3 +60,5 @@ h5 button {
   text-decoration: underline;
   cursor: pointer;
 }
+
+
