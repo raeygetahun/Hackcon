@@ -1,0 +1,70 @@
+/* Authentication.css */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Leave background color as is */
+}
+
+.auth-card {
+  background-color: #f7f7f7;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left; /* Adjust text alignment */
+}
+
+.registration-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the title */
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form .form-group {
+  margin: 10px 0;
+}
+
+.registration-form label {
+  font-weight: bold;
+  display: block; /* Make labels block elements */
+}
+
+/* Set asterisks color to red */
+.registration-form label .required {
+  color: red;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form select,
+.registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.registration-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}
+
+

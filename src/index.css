@@ -6,7 +6,5 @@ body {
 
 /* Hide the entire body content (except .message-container) on small screens */
 @media screen and (max-width: 980px) {
-  body {
-    display: none;
-  }
+  
 }
